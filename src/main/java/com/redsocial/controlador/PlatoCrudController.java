@@ -29,7 +29,7 @@ public class PlatoCrudController {
 	}
 	
 	@RequestMapping("/insertaActualizaPlato")
-	public String registraActualiza(Plato obj, Model m) {
+	public String insertaActualizaPlato(Plato obj, Model m) {
 		servicio.insertaActualizaPlato(obj);
 		List<Plato> lista =  servicio.listaPlato();
 		m.addAttribute("platos", lista);
